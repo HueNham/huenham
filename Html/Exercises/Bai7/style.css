@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+img {
+    align: left;
+    width: 200px;
+    float: left;
+}
+.tittle
+ {
+    background-color: red;
+    color: white;
+
+}
+.contact{
+    background-color: red;
+    color: white;
+}
