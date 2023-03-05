@@ -1,0 +1,19 @@
+
+table td, th{s
+    border: 1px solid purple;
+}
+
+table {
+    border-collapse: collapse;
+}
+th {
+   color: white;
+   background-color: rgb(215, 143, 9);
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+table tr:nth-child(even){
+    background-color: rgb(247, 230, 208)
+}
