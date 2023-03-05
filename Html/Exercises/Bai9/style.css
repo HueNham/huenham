@@ -1,0 +1,27 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+color: red;
+text-align: center;
+}
+
+table, th, td {
+border: 1px solid red;
+}
+
+table {
+    border-collapse: collapse;
+    width:100%;
+    /*flex: 30% 30% 30% 10%;*/
+}
+
+td[rowspan] {
+    color: red;
+}
+td:last-child, td:nth-last-child(2) {
+    text-align: center;
+}
+tr:last-child td {
+    text-align: left;
+}
