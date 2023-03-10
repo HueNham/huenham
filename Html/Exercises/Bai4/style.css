@@ -1,0 +1,20 @@
+body {
+    background-image: url(./img/corona.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2 {
+    color: rgb(47, 148, 159);
+    text-align: center;
+}
+.pattaya {
+    color: rgb(47, 148, 159);
+}
+
+#p1 {
+color: white;
+background-color:rgb(47, 148, 159) ;
+font-weight: bold;
+font-style: italic;
+}
