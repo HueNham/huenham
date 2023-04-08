@@ -1,22 +1,19 @@
-
-    // // Lấy danh sách tất cả các menu item và sub-menu item
-    // var menuItems = document.querySelectorAll('.menu-item');
-    // var subMenuItems = document.querySelectorAll('.sub-menu a');
-    
-    // // Thêm sự kiện hover cho từng menu item và sub-menu item
-    // menuItems.forEach(function(menuItem) {
-    //     menuItem.addEventListener('mouseenter', function() {
-    //         this.querySelector('.sub-menu').style.display = 'block';
-    //     });
-    //     menuItem.addEventListener('mouseleave', function() {
-    //         this.querySelector('.sub-menu').style.display = 'none';
-    //     });
-    // });
-    // subMenuItems.forEach(function(subMenuItem) {
-    //     subMenuItem.addEventListener('mouseenter', function() {
-    //         this.parentNode.parentNode.style.display = 'block';
-    //     });
-    //     subMenuItem.addEventListener('mouseleave', function() {
-    //         this.parentNode.parentNode.style.display = 'none';
-    //     });
-    // });
+function searchContent() {
+    const input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+document.getElementById("searchBtn").addEventListener("click", function() {
+    searchContent();
+});

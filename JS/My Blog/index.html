@@ -24,7 +24,7 @@
         <ul>
             <li><a href="#home" class="menu-item"><i class="fas fa-home"></i></a></li>
             <li>
-                <a href="#study" class="menu-item">Learning</a>
+                <a href="#learning" class="menu-item">Learning</a>
                 <ul class="sub-menu">
                     <li><a href="#korean">Korean</a></li>
                     <li><a href="#chinese">Chinese</a></li>
@@ -42,60 +42,74 @@
             <li><a href="#about" class="menu-item">About Me</a></li>
 
             <div class="search-container">
-                <form action="click"></form>
-                    <input type="text" placeholder="Search content.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                <form>
+                    <input type="text" id="searchInput" placeholder="Search content.." name="search">
+                    <button type="button" id="searchBtn"><i class="fa fa-search"></i></button>
                 </form>
     
             </div>
         </ul>
        
     </div>
+
+    <!--About me-->
+
+    <section id="about">
+        <h3>About Me</h3>
+        <img src="path-to-my-picture.jpg" alt="My Picture">
+        <p>My name is Summer and I am a language learner. I started learning languages when I was in college and have been passionate about it ever since. 
+            I love exploring different cultures and meeting new people from around the world. In my free time, I enjoy reading, watching movies, and traveling.</p>
+      </section>
       
     <!--Learning content-->
-    <h3>Learning</h3>
-        
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    <section id="learning">
+        <h2>Learning</h2>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h4>Korean</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+              <div class="col-sm-4">
+                <h4>Chinese</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+              <div class="col-sm-4">
+                <h4>English</h4>        
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 3</h3>        
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-        </div>
-      </div>
+    </section>
+      
     <!--Reading content-->
+
       <h3>Reading</h3>
         
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <h3>Column 1</h3>
+            <h4>News</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
           <div class="col-sm-4">
-            <h3>Column 2</h3>
+            <h4>Book</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
           <div class="col-sm-4">
-            <h3>Column 3</h3>        
+            <h4>Comic</h4>        
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
           </div>
         </div>
       </div>
+
+
     
     
 <script src="index.js"></script>
